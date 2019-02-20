@@ -20,5 +20,6 @@ App pictures -
 
 ![](media/ALF_Database_Information05.png)
 
+Copy/Paste to Excel and Sort:
 ![](media/ALF_Database_Information06.png)
 
