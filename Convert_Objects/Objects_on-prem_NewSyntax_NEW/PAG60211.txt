@@ -1,0 +1,104 @@
+OBJECT Page 60211 ALF_Database_Information_Table
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20190220D;
+    Time=102918.120T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    Editable=false;
+    CaptionML=ENU=ALF Database Information Tables for Company;
+    ApplicationArea=#All;
+    InsertAllowed=false;
+    DeleteAllowed=false;
+    ModifyAllowed=false;
+    SourceTable=AllObjWithCaption;
+    DataCaptionExpr=CompanyName;
+    SourceTableView=SORTING("Object Type","Object ID")
+                    ORDER(Ascending)
+                    WHERE("Object Type"=CONST(TableData));
+    PageType=List;
+    UsageCategory=Lists;
+    OnAfterGetRecord=BEGIN
+                       TempConfigLine.Init;
+                       TempConfigLine."Line Type" := TempConfigLine."Line Type"::Table;
+                       TempConfigLine."Table ID" := Rec."Object ID";
+                       TempConfigLine.SetRange("Company Filter",CompanyName);
+                       NoOfRecords := TempConfigLine.GetNoOfRecords;
+                     END;
+
+  }
+  CONTROLS
+  {
+    { 1   ;0   ;Container ;
+                ContainerType=ContentArea;
+                Name=Control1 }
+
+    { 2   ;1   ;Group     ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 3   ;2   ;Field     ;
+                CaptionML=ENU=Object Type;
+                ApplicationArea=#All;
+                SourceExpr="Object Type";
+                Name="Object Type";
+                ImplicitType=Option }
+
+    { 4   ;2   ;Field     ;
+                CaptionML=ENU=Object ID;
+                ApplicationArea=#All;
+                SourceExpr="Object ID";
+                Name="Object ID";
+                ImplicitType=Integer }
+
+    { 5   ;2   ;Field     ;
+                CaptionML=ENU=Object Name;
+                ApplicationArea=#All;
+                SourceExpr="Object Name";
+                Name="Object Name";
+                ImplicitType=Text30 }
+
+    { 6   ;2   ;Field     ;
+                CaptionML=ENU=Object Caption;
+                ApplicationArea=#All;
+                SourceExpr="Object Caption";
+                Name="Object Caption";
+                ImplicitType=Text249 }
+
+    { 7   ;2   ;Field     ;
+                CaptionML=ENU=Object Subtype;
+                ApplicationArea=#All;
+                SourceExpr="Object Subtype";
+                Name="Object Subtype";
+                ImplicitType=Text30 }
+
+    { 8   ;2   ;Field     ;
+                CaptionML=ENU=App Package ID;
+                ApplicationArea=#All;
+                SourceExpr="App Package ID";
+                Name="App Package ID";
+                ImplicitType=GUID }
+
+    { 9   ;2   ;Field     ;
+                Name=No. of Records;
+                CaptionML=ENU=No. of Records;
+                ApplicationArea=#All;
+                SourceExpr=NoOfRecords;
+                ImplicitType=Integer }
+
+  }
+  CODE
+  {
+    VAR
+      NoOfRecords@1000 : Integer;
+      TempConfigLine@1001 : TEMPORARY Record "Config. Line";
+
+    BEGIN
+    END.
+  }
+}
+

@@ -1,0 +1,90 @@
+OBJECT Page 60211 ALF_Database_Information_Table
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20.02.19;
+    Time=10:29:18;
+    Modified=Yes;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    Editable=No;
+    CaptionML=ENU=ALF Database Information Tables for Company;
+    ApplicationArea=#All;
+    InsertAllowed=No;
+    DeleteAllowed=No;
+    ModifyAllowed=No;
+    SourceTable=Table2000000058;
+    DataCaptionExpr=COMPANYNAME;
+    SourceTableView=SORTING(Object Type,Object ID)
+                    ORDER(Ascending)
+                    WHERE(Object Type=CONST(TableData));
+    PageType=List;
+    UsageCategory=Lists;
+    OnAfterGetRecord=BEGIN
+                       TempConfigLine.INIT;
+                       TempConfigLine."Line Type" := TempConfigLine."Line Type"::Table;
+                       TempConfigLine."Table ID" := Rec."Object ID";
+                       TempConfigLine.SETRANGE("Company Filter",COMPANYNAME);
+                       NoOfRecords := TempConfigLine.GetNoOfRecords;
+                     END;
+
+  }
+  CONTROLS
+  {
+    { 1   ;0   ;Container ;
+                ContainerType=ContentArea }
+
+    { 2   ;1   ;Group     ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 3   ;2   ;Field     ;
+                CaptionML=ENU=Object Type;
+                ApplicationArea=#All;
+                SourceExpr="Object Type" }
+
+    { 4   ;2   ;Field     ;
+                CaptionML=ENU=Object ID;
+                ApplicationArea=#All;
+                SourceExpr="Object ID" }
+
+    { 5   ;2   ;Field     ;
+                CaptionML=ENU=Object Name;
+                ApplicationArea=#All;
+                SourceExpr="Object Name" }
+
+    { 6   ;2   ;Field     ;
+                CaptionML=ENU=Object Caption;
+                ApplicationArea=#All;
+                SourceExpr="Object Caption" }
+
+    { 7   ;2   ;Field     ;
+                CaptionML=ENU=Object Subtype;
+                ApplicationArea=#All;
+                SourceExpr="Object Subtype" }
+
+    { 8   ;2   ;Field     ;
+                CaptionML=ENU=App Package ID;
+                ApplicationArea=#All;
+                SourceExpr="App Package ID" }
+
+    { 9   ;2   ;Field     ;
+                Name=No. of Records;
+                CaptionML=ENU=No. of Records;
+                ApplicationArea=#All;
+                SourceExpr=NoOfRecords }
+
+  }
+  CODE
+  {
+    VAR
+      NoOfRecords@1000 : Integer;
+      TempConfigLine@1001 : TEMPORARY Record 8622;
+
+    BEGIN
+    END.
+  }
+}
+

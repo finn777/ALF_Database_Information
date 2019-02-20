@@ -1,0 +1,23 @@
+{
+  "id": "d22be835-b2e4-4901-ae8a-f721de29c330",
+  "name": "ALF_Database_Information",
+  "publisher": "Alexey Finogenov",
+  "brief": "",
+  "description": "ALF Database Information - small feature that show the tables list with number of records per table. Info for specific company. New option add on 'Company Infomation' page.",
+  "version": "1.0.190220.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "https://github.com/finn777/ALF_Database_Information/blob/master/readme.md",
+  "url": "https://github.com/finn777/ALF_Database_Information/blob/master/readme.md",
+  "logo": "ALFLogo.png",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 60211,
+    "to": 60211
+  },
+  "runtime": "2.2"
+}

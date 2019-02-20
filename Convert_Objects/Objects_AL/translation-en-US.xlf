@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 2393498893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ALF Database Information Tables for Company</source>
+          <target>ALF Database Information Tables for Company</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ALF_Database_Information_Table - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2393498893 - Control 1358565015 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Object Type</source>
+          <target>Object Type</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ALF_Database_Information_Table - Control "Object Type" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2393498893 - Control 1953899892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Object ID</source>
+          <target>Object ID</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ALF_Database_Information_Table - Control "Object ID" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2393498893 - Control 1637941902 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Object Name</source>
+          <target>Object Name</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ALF_Database_Information_Table - Control "Object Name" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2393498893 - Control 3788665725 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Object Caption</source>
+          <target>Object Caption</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ALF_Database_Information_Table - Control "Object Caption" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2393498893 - Control 3105857027 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Object Subtype</source>
+          <target>Object Subtype</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ALF_Database_Information_Table - Control "Object Subtype" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2393498893 - Control 807636266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>App Package ID</source>
+          <target>App Package ID</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ALF_Database_Information_Table - Control "App Package ID" - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2393498893 - Control 2065755396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Records</source>
+          <target>No. of Records</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ALF_Database_Information_Table - Control No. of Records - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
