@@ -17,9 +17,3 @@ App pictures -
 ![](media/ALF_Database_Information03.png)
 
 ![](media/ALF_Database_Information04.png)
-
-![](media/ALF_Database_Information05.png)
-
-Copy/Paste to Excel and Sort:
-![](media/ALF_Database_Information06.png)
-
